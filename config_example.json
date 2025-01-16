@@ -1,0 +1,63 @@
+{
+    "rp_model": "pi4b",
+    "device_list": [
+        {
+            "device_ID": 0,
+            "device_name": "localhost",
+            "address": "127.0.0.1",
+            "port": "8888"
+        },
+        {
+            "device_ID": 1,
+            "device_name": "outsideserver",
+            "address": "128.0.0.1",
+            "port": "8888"
+        }
+    ],
+    "event_list": [
+        {
+            "event_ID": 1,
+            "event_name": "One",
+            "gpio_source": "x",
+            "target/device": 1,
+            "event_action": "press",
+            "button_bank": 1,
+            "button_page": 1,
+            "button_button": 1,
+            "command": ""
+        },
+        {
+            "event_ID": 2,
+            "event_name": "Two",
+            "gpio_source": "y",
+            "target/device": 1,
+            "event_action": "press",
+            "button_bank": 2,
+            "button_page": 2,
+            "button_button": 2,
+            "command": ""
+        },
+        {
+            "event_ID": 3,
+            "event_name": "Three Test",
+            "gpio_source": "y",
+            "target/device": 1,
+            "event_action": "press",
+            "button_bank": 2,
+            "button_page": 2,
+            "button_button": 2,
+            "command": ""
+        },
+        {
+            "event_ID": 4,
+            "event_name": "Four Test",
+            "gpio_source": "y",
+            "target/device": 1,
+            "event_action": "style",
+            "button_bank": "bank",
+            "button_page": 2,
+            "button_button": 7,
+            "command": ""
+        }
+    ]
+}

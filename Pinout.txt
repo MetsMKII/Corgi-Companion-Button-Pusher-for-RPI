@@ -1,0 +1,44 @@
+Rasberry Pi GPIO 4B pin out
+
+
+Straight Numbering
+1. 3V3
+2. 5V Volts
+3. GPIO 2 [I2c SDA]
+4. 5V
+5. GPIO 3 [I2C SCL]
+6. GND (Ground)
+7. GPIO 4
+8. GPIO 14 [UART TX]
+9. GND (Ground)
+10. GPIO 15 [UART RX]
+11. GPIO 17
+12. GPIO 18 [PCM CLK][PWMO]
+13. GPIO 27
+14. GND (Ground)
+15. GPIO 22
+16. GPIO 23
+17. 3V3
+18. GPIO 24
+19. GPIO 10 [SPI MOSI]
+20. GND (Ground)
+21. GPIO 9 [SPI MISO]
+22. GPIO 25
+23. GPIO 
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+39.
+40.
