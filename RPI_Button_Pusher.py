@@ -1,7 +1,15 @@
 #Hello World (Boiler Plate) Start
 import json
-import RPi.GPIO
+import RPi.GPIO as GPIO
+
+
+GPIO.RPI_INFO
+
 print (type("RPI_Button_Pusher Start"))
+
+# Information
+Software_Build = 0001
+Software_Version = A.0.0
 
 
 # Variables
@@ -35,6 +43,27 @@ print ("Load Config (Json) Module End")
 
 #GPIO Listen Module Start
 
+# Setting up GPIPO module
+
+GPIO.setmode(GPIO.BOARD)
+mode = GPIO.getmode()
+GPIO.setwarnings(False)
+
+chan_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+
+GPIO.setup(chan_list, GPIO.in)
+
+#GPIO edge events
+
+if GPIO.event_detected(1):
+    print('Button pressed')
+
+GPIO.add_event_detect(chan_list, GPIO.RISING)
+
+
+
+#def GPIO_listen():
+
 
 
 #print ("GPIO Listen Module End")
@@ -60,7 +89,10 @@ print ("Load Config (Json) Module End")
 #GUI
 
 
+# Program Shut down
 
 
+
+GPIO.cleanup()
 
 print ("RPI_Button_Pusher End Program")
